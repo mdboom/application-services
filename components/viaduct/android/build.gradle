@@ -163,5 +163,5 @@ apply from: "$rootDir/publish.gradle"
 // `publishedArtifacts` property.
 ext.configurePublish(
         /* jnaForTestConfiguration= */ configurations.jnaForTest,
-        /* variantWithoutLib= */ 'androidWithoutLib',
+        /* isMegazord= */ false,
 )
