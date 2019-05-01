@@ -6,7 +6,7 @@ edition = "2018"
 license = "ISC"
 
 [lib]
-crate-type = ["lib", "staticlib", "cdylib"]
+crate-type = ["lib"]
 
 [dependencies]
 failure = "0.1.5"
