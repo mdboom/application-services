@@ -1,4 +1,4 @@
-libraryVersion: 0.27.1-NOMZ1
+libraryVersion: 0.27.1-NOMZ5
 groupId: org.mozilla.appservices
 projects:
   # fxa-client-library:
@@ -60,3 +60,8 @@ projects:
   #   artifactId: fenix-megazord
   #   publishedArtifacts: [fenix-megazord, fenix-megazord-forUnitTests]
   #   description: Megazord of [fxaclient, places, push, logging].
+  nsslibs:
+    path: components/nss-libs-android
+    artifactId: nsslibs
+    publishedArtifacts: [nsslibs]
+    description: Component containing the NSS shared objects
