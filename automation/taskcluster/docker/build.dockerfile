@@ -100,6 +100,9 @@ RUN curl -L https://dl.google.com/android/repository/android-ndk-${ANDROID_NDK_V
 ENV ANDROID_NDK_TOOLCHAIN_DIR /root/.android-ndk-r15c-toolchain
 ENV ANDROID_NDK_API_VERSION 21
 
+# The android gradle plugin uses $ANDROID_NDK_HOME rather than $ANDROID_NDK_ROOT.
+ENV ANDROID_NDK_HOME /build/android-ndk
+
 # Rust (cribbed from https://github.com/rust-lang-nursery/docker-rust/blob/ced83778ec6fea7f63091a484946f95eac0ee611/1.27.1/stretch/Dockerfile)
 
 RUN set -eux; \

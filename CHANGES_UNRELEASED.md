@@ -4,6 +4,16 @@
 
 [Full Changelog](https://github.com/mozilla/application-services/compare/v0.27.2...master)
 
+## General
+
+### What's Fixed
+
+- Native libraries should now have debug symbols stripped by default,
+  resulting in significantly smaller package size for consuming
+  applications. A test was also added to CI to ensure that this
+  does not regress in future.
+  ([1107](https://github.com/mozilla/application-services/issues/1107))
+
 ## Push
 
 ### Breaking Changes
